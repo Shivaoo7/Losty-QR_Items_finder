@@ -1,0 +1,1 @@
+# Losty-QR_Items_finder
