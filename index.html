@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lost-Things-finder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  
+<section class="bgimage" id="home">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h1 class="hero_title">Welocome to Losty</h1>
+          <h2 class="hero_desc">Track & find your valuable things</h2>
+          <p class="hero_name">By Shivam</p>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Losty</h1>
+
+      <div class="row mt-4">
+          <div class="col-lg-4">
+          </div>
+
+          <div class="text-center">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="lost3.png"
+                  alt="Oh Lost"
+                  width="20%"
+                  style="border-radius: 50%"
+                />
+                <img
+                  src="lost3.png"
+                  alt="Oh Lost"
+                  width="20%"
+                  style="border-radius: 50%"
+                />
+              </picture>
+              <p class="par">
+                <br>Traveling can often lead to misplaced luggage, causing inconvenience and stress. The QR Luggage Tracker aims to mitigate this issue by providing travelers with a unique QR code that, when scanned, displays the owner’s contact information, making it easier for lost luggage to be returned.</p>
+                <p class="par"> Losty is the <strong>QR Luggage ( items ) Tracker</strong> is a web application designed to help travelers easily recover lost luggage. Upon registering, users receive a unique QR code that can be attached to their luggage. If the luggage is lost and later found, anyone who scans the QR code can see the registered owner’s name and email, facilitating the return of the lost item.
+              </p>
+              
+          </div>
+          
+          <div class="row mt-3">
+            <h3 class="text-left">Steps to use Losty</h3>
+            <div class="col-md-8">
+                <ol>
+                    <br><li>In the <strong>Genreate QR</strong> section you need to enter your details which you wanted to share to the who finds and scan your QR code.</li>
+                    <br><li>After filling your details you just need to click on the <strong>Generate QR Code</strong> icon.</li>
+                    <br><li>When the QR code is generated you can <strong>Download</strong> the Code in the form of png image.</li>
+                    <br><li>The final step is Paste this QR Code on your luggage or your items.</li>
+                </ol>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+    <section class="main">
+        <h1 class="head">Start creating your Tracking QR Code</h1>
+        <div class="containert">
+            <div class="generator">
+                <h2>Generate QR Code</h2>
+                <input type="text" id="qrText" placeholder="Enter your text">
+                <button id="generateBtn">Generate QR Code</button>
+                <div id="qrcode"></div>
+                <a class="linkk" href="#" download="qrcode.png" id="downloadBtn">Download QR Code</a>
+            </div>
+            <div class="scanner">
+                <h2>Scan Your QR Code</h2>
+                <button id="StartScanBtn">Start Scanning</button>
+                <video id="qrVideo" autoplay playinline></video>
+                <div id="scanResult"></div>
+            </div>
+        </div>
+    </section>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<footer class="footer">
+    <p>&copy; SHIVAM KUMAR SINGH, 2024</p>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
